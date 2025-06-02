@@ -1,6 +1,6 @@
 {% set name = "activitysim" %}
 {% set version = "1.4.0" %}
-
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
   run:
@@ -38,7 +38,7 @@ requirements:
     - psutil ~=5.9.0
     - pyarrow >=11.0
     - pydantic >=2.6
-    - python >=3.10
+    - python >={{ python_min }}
     - pyyaml >=5.1
     - pypyr
     - pytables ~=3.9
@@ -57,6 +57,7 @@ test:
     - activitysim --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/activitysim/activitysim
