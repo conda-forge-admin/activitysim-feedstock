@@ -32,7 +32,7 @@ requirements:
     - numpy ~=1.23.0
     - openmatrix >=0.3.4.1
     - orca >=1.6
-    - pandas >=1.4.0,<2
+    - pandas >=2.2
     - pandera >=0.15,<0.18.1
     - platformdirs
     - psutil ~=5.9.0
@@ -46,7 +46,7 @@ requirements:
     - scikit-learn >=1.2
     - sharrow >=2.9.4
     - simwrapper
-    - xarray ~=2023.2
+    - xarray >=2024.05
 
 test:
   imports:
